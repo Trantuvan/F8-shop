@@ -257,8 +257,13 @@
   padding: 0 32px;
 }
 
-.auth-form {
+.auth_form {
   width: 500px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  /* có lớp auth-form__socials là con auth_form nên che mất border-radius */
+  /* overflow: hidden có thể bo con lại */
+  overflow: hidden;
 }
 
 .auth-form__header {
