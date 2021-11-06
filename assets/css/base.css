@@ -1,0 +1,114 @@
+/* code thanh phan chung cho page */
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --primary-color: #EE4D2D;
+    --border-color: #dbdbdb;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    /* da phan 100% = 16px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid{
+    /* width: 1200px; */
+    /* max-width set grid tag = 100% window if width > 1200px */
+    /* max-width: 100%; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal__body{
+    /* co width height de nhin lam khung, khong can co content tu to ra */
+    /* width: 300px;
+    height: 300px; */
+    background-color: var(--white-color);
+    /* parent container = flex, margin: auto tự động canh giữa */
+    margin: auto;
+    z-index: 999;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Button Style */
+.btn{
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--normal:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--size-s{
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.btn.btn--primary-disable{
+    cursor: default;
+    background-color: #949494;
+    color: #c3c3c3;
+}
+
+
