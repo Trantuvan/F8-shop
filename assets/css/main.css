@@ -450,13 +450,27 @@
   padding: 24px 0;
 }
 
+/* them class nay de thuc hien viec add class header__cart-list--no-cart */
+/* anh va msg hien len */
+.header__cart-list--no-cart .header__cart-no-cart-img,
+.header__cart-list--no-cart .header__cart-list-no-cart-msg {
+  display: block;
+  /* margin-left: auto tu dong can trai*/
+  margin-left: auto;
+  /* margin-left: auto tu dong can phai*/
+  margin-right: auto;
+}
+
 .header__cart-no-cart-img {
   /* chim het width the cha */
   width: 30%;
+  /* Display: none; an di TH no cart */
+  display: none;
 }
 
 .header__cart-list-no-cart-msg {
-  display: block;
+  display: none;
+  /* display: block; */
   font-size: 1.4rem;
   margin-top: 14px;
   color: var(--text-color);
@@ -466,6 +480,19 @@
   color: var(--white-color);
   font-size: 2.4rem;
   margin-top: 6px;
+}
+
+.header__cart-notice {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  padding: 1px 7px;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  border-radius: 10px;
+  border: 2px solid #ee4d2d;
 }
 
 .header__search-input-wrap {
