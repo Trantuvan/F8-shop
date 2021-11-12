@@ -14,7 +14,6 @@
   list-style: none;
   padding-left: 0;
   margin-top: 4px 0 0 0;
-  z-index: 1;
   display: flex;
 }
 
@@ -38,7 +37,7 @@
 }
 
 .header__navbar-user-name {
-  margin-left: 8px;
+  margin-left: 4px;
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -81,6 +80,10 @@
   top: -28px;
 }
 
+.header__navbar-user-item--separate {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 .header__navbar-user-item a {
   /* phai co inline-block the a moi padding dc */
   display: block;
@@ -114,7 +117,7 @@
 .header__navbar-item,
 .header__navbar-item-link {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--white-color);
   text-decoration: none;
   font-weight: 300;
@@ -152,6 +155,10 @@
 .header__navbar-icon-link {
   color: var(--white-color);
   text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+  margin-left: 3px;
 }
 
 .header__navbar-icon {
@@ -213,13 +220,15 @@
 /* Notification */
 .header__notify {
   position: absolute;
+  z-index: 1;
   top: 118%;
   right: 0;
   width: 404px;
-  border: 1px solid #d3d3d3;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
   background-color: var(--white-color);
   cursor: default;
-  transform-origin: calc(100%-20px) top;
+  transform-origin: calc(100%-32px) top;
   animation: headerNotifyGrowhth ease-in 0.2s;
   /* toi uu thuoc tinh cho opacity vs transform theo trinh duyet */
   will-change: opacity, transform;
@@ -473,6 +482,11 @@
 
 .header__logo {
   width: 200px;
+}
+
+.header__logo-link {
+  text-decoration: none;
+  color: transparent;
 }
 
 .header__logo-img {
@@ -741,7 +755,7 @@
 .header__search-option {
   position: absolute;
   right: 0;
-  top: calc(100% + 4px);
+  top: calc(100% + 3px);
   list-style: none;
   width: 130px;
   padding-left: 0;
