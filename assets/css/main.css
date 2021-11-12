@@ -408,6 +408,8 @@
   align-items: center;
 }
 
+/* Cart layout */
+
 .header__cart {
   width: 150px;
   /* cho vao the cha can giua the con */
@@ -444,6 +446,8 @@
   font-weight: 400;
   color: #999;
 }
+
+/* Cart Item */
 
 .header__cart-list-item {
   padding-left: 0;
