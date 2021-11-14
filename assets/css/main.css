@@ -862,3 +862,78 @@
   /* cho display block ke thua lai height & width lam the a to ra */
   display: block;
 }
+
+/* App container */
+.app__container {
+  background-color: #f5f5f5;
+}
+
+.app__content {
+  padding-top: 36px;
+}
+
+.category {
+  background-color: var(--white-color);
+  border-radius: 2px;
+}
+
+.category__heading {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  padding: 12px 16px;
+  margin-top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.category__heading-icon {
+  font-size: 1.4rem;
+  margin-right: 4px;
+  /* chinh tay nen cho position relative chinh no*/
+  position: relative;
+  top: 1.5px;
+}
+
+.category-list {
+  padding: 0 0 8px 0;
+  list-style: none;
+  margin-left: 9px;
+}
+
+.categeory-item--active .category-item__link {
+  color: var(--primary-color);
+}
+
+.categeory-item--active .category-item__link::before {
+  position: absolute;
+  /* 50% cua the a thang chua lop gia */
+  top: 50%;
+  left: 7px;
+  content: "";
+  border: 4px solid;
+  /*50% cua chinh no lop gia before */
+  transform: translateY(-50%);
+  border-color: transparent transparent transparent var(--primary-color);
+}
+
+.category-item__link {
+  position: relative;
+  /* ban dau la 0 */
+  right: 0;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  /* the a khong phai block nen khong padding hay set width dc */
+  display: block;
+  padding: 8px 16px;
+  /* position: relative; right: 0; set vi tri ban dau*/
+  /* transition dien ta hanh dong khi co tac dong */
+  transition: right linear 0.1s;
+}
+
+.category-item__link:hover {
+  /* khi hover vao link transition kich hoat chay qua phai -4px */
+  right: -4px;
+  color: var(--primary-color);
+}
+
+/* Home sort + filter*/
