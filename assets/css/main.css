@@ -1031,7 +1031,7 @@
   /* Muốn display 2 dòng max quá 2 dòng để ... */
   /* set height = 2 * line-height để giới hạn thẻ H4 */
   height: 3.6rem;
-  margin: 10px;
+  margin: 10px 10px 6px;
   /* overflow nghia la khi con chòi ra ngoài cha thì hành xử như nào ? */
   overflow: hidden;
   /* browser khong ho tro display block */
@@ -1043,27 +1043,59 @@
   /* clamp tai dong thu 2 display ... */
   -webkit-line-clamp: 2;
   /* browser khong ho tro webkit */
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
   /* ngan chu xuong dong */
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .home-product-item__price {
+  display: flex;
+  align-items: baseline;
+  /* de gia nam tren 1 dong xuong hang dc */
+  flex-wrap: wrap;
 }
 
 .home-product-item__price-old {
+  margin-left: 10px;
+  font-size: 1.4rem;
+  color: #666;
+  text-decoration: line-through;
 }
 
 .home-product-item__price-current {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin-left: 10px;
 }
 
 .home-product-item__action {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 10px 0;
 }
 
 .home-product-item__like {
+  font-size: 1.4rem;
+}
+
+.home-product-item__like-icon-fill {
+  display: none;
+  color: #f63d30;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-fill {
+  display: inline-block;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-empty {
+  display: none;
 }
 
 .home-product-item__rating {
+  font-size: 1rem;
+  transform: scale(0.7);
+  transform-origin: right;
+  color: #d5d5d5;
 }
 
 .home-product-item__origin {
