@@ -1006,3 +1006,83 @@
   font-size: 1.4rem;
   color: #555;
 }
+/* Product Item */
+.home-product-item {
+  background-color: var(--white-color);
+  margin-top: 10px;
+}
+
+.home-product-item__img {
+  /* padding-top: 100% = kich thuoc cua the chua no */
+  /* the .home-product-item co height*/
+  padding-top: 100%;
+  /* su dung background-img de su ly anh lon or nho hon div chua no */
+  /* qua thuoc tinh background-size */
+  background-size: contain;
+  /* thuoc tinh nay giup center anh neu anh to qua */
+  background-position: center;
+}
+
+.home-product-item__name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.8rem;
+  /* Muốn display 2 dòng max quá 2 dòng để ... */
+  /* set height = 2 * line-height để giới hạn thẻ H4 */
+  height: 3.6rem;
+  margin: 10px;
+  /* overflow nghia la khi con chòi ra ngoài cha thì hành xử như nào ? */
+  overflow: hidden;
+  /* browser khong ho tro display block */
+  display: block;
+  /* -webkit-box tao dau ... chi ho tro browser webkit */
+  display: -webkit-box;
+  /* chu chay tren -> duoi, trai qua phai thi orient vertical */
+  -webkit-box-orient: vertical;
+  /* clamp tai dong thu 2 display ... */
+  -webkit-line-clamp: 2;
+  /* browser khong ho tro webkit */
+  text-overflow: ellipsis;
+  /* ngan chu xuong dong */
+  white-space: nowrap;
+}
+
+.home-product-item__price {
+}
+
+.home-product-item__price-old {
+}
+
+.home-product-item__price-current {
+}
+
+.home-product-item__action {
+}
+
+.home-product-item__like {
+}
+
+.home-product-item__rating {
+}
+
+.home-product-item__origin {
+}
+
+.home-product-item__brand {
+}
+
+.home-product-item__origin-name {
+}
+
+.home-product-item__favourite {
+}
+
+.home-product-item__sale-off {
+}
+
+.home-product-item__sale-off-percent {
+}
+
+.home-product-item__sale-off-label {
+}
