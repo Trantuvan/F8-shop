@@ -67,7 +67,7 @@
   top: -18px;
   right: 0;
   width: 56%;
-  height: 20px;
+  height: 3px;
 }
 
 .header__navbar-user-menu::before {
@@ -239,7 +239,7 @@
 .header__notify::before {
   content: "";
   border: solid;
-  border-width: 20px 27px;
+  border-width: 3px 27px;
   border-color: transparent transparent var(--white-color) transparent;
   position: absolute;
   right: 4px;
@@ -252,7 +252,7 @@
   position: absolute;
   /* phai co ca width vs height moi hien block do khong co content */
   width: 90px;
-  height: 20px;
+  height: 3px;
   right: 0;
   top: -16px;
 }
@@ -634,7 +634,7 @@
   position: absolute;
   right: 3px;
   top: -25px;
-  border-width: 16px 20px;
+  border-width: 16px 3px;
   border-style: solid;
   border-color: transparent transparent var(--white-color) transparent;
 }
@@ -768,9 +768,9 @@
   content: "";
   display: block;
   width: 100%;
-  height: 20px;
+  height: 3px;
   position: absolute;
-  top: -20px;
+  top: -3px;
   left: 0;
 }
 
@@ -1008,6 +1008,7 @@
 }
 /* Product Item */
 .home-product-item {
+  position: relative;
   background-color: var(--white-color);
   margin-top: 10px;
 }
@@ -1118,13 +1119,38 @@
   font-weight: 300;
 }
 
-.home-product-item__brand {
-}
-
-.home-product-item__origin-name {
-}
-
 .home-product-item__favourite {
+  position: absolute;
+  top: 10px;
+  left: -4px;
+  color: var(--primary-color);
+  background-color: currentColor;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  padding-right: 4px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.home-product-item__favourite span {
+  color: var(--white-color);
+}
+
+.home-product-item__favourite::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  border-top: 3px solid currentColor;
+  border-left: 3px solid transparent;
+  filter: brightness(60%);
+}
+
+.home-product-item__favourite i {
+  font-size: 0.9rem;
+  margin: 0 2px 0 5px;
+  color: var(--white-color);
 }
 
 .home-product-item__sale-off {
