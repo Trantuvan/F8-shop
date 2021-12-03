@@ -914,7 +914,7 @@
 }
 
 /* con dau tien cua .categeory-item thuoc lop gia before */
-.categeory-item::first-child::before {
+.categeory-item:first-child::before {
   display: none;
 }
 
