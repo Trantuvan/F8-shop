@@ -550,7 +550,7 @@
   padding-left: 0;
   list-style: none;
   /* height 56% view port heigt */
-  height: 56vh;
+  max-height: 56vh;
   overflow-y: auto;
 }
 
