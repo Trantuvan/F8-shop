@@ -26,18 +26,7 @@ html {
   box-sizing: border-box;
 }
 
-.grid {
-  /* width: 1200px; */
-  /* max-width set grid tag = 100% window if width > 1200px */
-  /* max-width: 100%; */
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.grid__full-width {
-  width: 100%;
-}
-
+/* Responsive */
 .grid__row {
   display: flex;
   flex-wrap: wrap;
