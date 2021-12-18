@@ -1,4 +1,9 @@
 /* code cho file rieng */
+.app {
+  /* app cho mobile */
+  overflow: hidden;
+}
+
 .header {
   height: var(--header-height);
   background-image: linear-gradient(0, #fe6433, #f53e2d);
@@ -973,6 +978,7 @@
 
 .header__sort-icons {
   font-size: 1.2rem;
+  font-weight: 300;
   color: rgb(131, 131, 131);
   position: relative;
   right: -34%;
@@ -1329,6 +1335,7 @@
 /* home-product__pagination */
 .home-product__pagination {
   margin: 48px 0 32px;
+  padding-left: 0;
 }
 
 /* Footer */

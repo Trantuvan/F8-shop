@@ -91,6 +91,26 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   }
 
+  .header__sort-icons {
+    right: -24%;
+    top: -6%;
+    font-size: 1.1rem;
+  }
+
+  .pagination-item {
+    margin: 0;
+  }
+
+  .pagination-item__link {
+    --height: 28px;
+    font-size: 1.6rem;
+    min-width: 36px;
+  }
+
+  .app__content {
+    margin: 0 4px;
+  }
+
   @keyframes mobileSearchSlideIn {
     from {
       opacity: 0;
