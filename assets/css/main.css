@@ -489,6 +489,7 @@
 
 .header__mobile-search {
   padding: 0 12px;
+  display: none;
 }
 
 .header__mobile-search-icon {
