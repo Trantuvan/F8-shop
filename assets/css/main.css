@@ -493,7 +493,7 @@
 }
 
 .header__mobile-search-icon {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: var(--white-color);
 }
 
@@ -1061,7 +1061,7 @@
 
 /* Mobile category */
 .mobile-category__list {
-  display: flex;
+  display: none;
   list-style: none;
   padding-left: 0;
   /* de su ly chu qua nhieu trong ul flex */
@@ -1111,6 +1111,8 @@
   border-radius: 4px;
   user-select: none;
   -webkit-user-select: none;
+  /* cho content khong dinh vao vien */
+  padding: 0 6px;
 }
 
 /* Home sort + filter*/
