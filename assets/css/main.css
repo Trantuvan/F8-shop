@@ -542,6 +542,7 @@
   display: inline-block;
   padding: 0 12px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-wrap:hover .header__cart-list {
@@ -965,6 +966,7 @@
 
 .header__sort-item--active .header__sort-link {
   color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .header__sort-item:first-child .header__sort-link::before {
@@ -1055,6 +1057,60 @@
 
 .category-item__link:hover {
   color: var(--primary-color);
+}
+
+/* Mobile category */
+.mobile-category__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  /* de su ly chu qua nhieu trong ul flex */
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.mobile-category__list::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-category__item {
+  /* de chu khong xuong hang */
+  /* flex-item khong dc shrink */
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link {
+  background-color: #87afd8;
+}
+
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link {
+  background-color: #76c9bd;
+}
+
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link {
+  background-color: #88cf81;
+}
+
+.mobile-category__link {
+  --line-height: 2rem;
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: center;
+  /* the a khong set dc kich thuoc */
+  display: block;
+  width: 110px;
+  line-height: var(--line-height);
+  height: calc(var(--line-height) * 2);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  border-radius: 4px;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Home sort + filter*/
